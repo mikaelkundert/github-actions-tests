@@ -16,4 +16,8 @@ In this repository we test how different workflows are triggered.
 * Creating pull request to `feature/first` did not trigger workflow
 * Creating pull request against `master` [did trigger workflow](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327955979)
   * Note: After this workflow was executed, green checkmark appeared to commits in both pull requests
-## Test 5: Branch `feature/**`, on pull request
+## Test 5: Branch `feature/**`, on push
+* [Pushing to `feature/wildcard-push-step-2`](https://github.com/mikaelkundert/github-actions-tests/commit/1de9d8c38cf1910970f0bd855545e8ae3c7a58d5) did not trigger any workflows
+* Pushing to `feature/wildcard-push` [did trigger workflow](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327989451)
+* Creating pull request to `master` did not trigger workflow
+  * But contains commit that has [workflow performed in another trigger](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327989451)
