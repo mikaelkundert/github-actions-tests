@@ -1,4 +1,4 @@
-name: Branch master on merge
+name: Branch master on push
 
 on:
   push:
