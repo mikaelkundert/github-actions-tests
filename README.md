@@ -12,4 +12,8 @@ In this repository we test how different workflows are triggered.
 * No other workflows were performed
 
 ## Test 4: Branch `master`, on pull request
+* Pushing to `feature/master-pull-request` did not trigger workflow
+* Creating pull request to `feature/first` did not trigger workflow
+* Creating pull request against `master` [did trigger workflow](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327955979)
+  * Note: After this workflow was executed, green checkmark appeared to commits in both pull requests
 ## Test 5: Branch `feature/third`, on pull request
