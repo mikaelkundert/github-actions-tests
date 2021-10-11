@@ -1,0 +1,11 @@
+name: Branch master on merge
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo This is test 1
