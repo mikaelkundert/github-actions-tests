@@ -8,5 +8,8 @@ In this repository we test how different workflows are triggered.
 * [Workflow](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327924510) was performed after pushing `feature/first` to `origin`
 
 ## Test 3: Branch `feature/second`, on push
+* [Workflow](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1327937478) was performed after pushing `feature/second` to `origin`
+* No other workflows were performed
+
 ## Test 4: Branch `master`, on pull request
 ## Test 5: Branch `feature/third`, on pull request
