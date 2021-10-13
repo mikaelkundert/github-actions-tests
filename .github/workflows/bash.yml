@@ -1,0 +1,10 @@
+name: Run bash on master push
+on:
+  push:
+    branches: [ master ]
+jobs:
+  run_bash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ./test.sh
