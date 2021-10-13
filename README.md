@@ -29,6 +29,10 @@ This test clarifies if action is being performed from branch to another branch.
 * Create action that that applies to both branches, commit it to `feature/third`
   * Should perform action only in `feature/third` because it's committed only in that branch
     and there is no `feature/fourth` existing yet
+  * **Observation:** It did [trigger action](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1336279231)
 * Create `feature/fourth` branch
 * Commit test file
   * Observe if action from `feature/third` is being performed against `feature/fourth`
+  * **Observation:** When commiting file to `feature/fourth` it did not perform action
+* Merge `feature/third` to `feature/fourth`
+  * **Observation:** When merging it did not [perform action](https://github.com/mikaelkundert/github-actions-tests/actions/runs/1336289998)
