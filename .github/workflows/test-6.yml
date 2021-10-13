@@ -1,0 +1,11 @@
+name: Branch feature/third on push
+
+on:
+  push:
+    branches: [ feature/third, feature/fourth ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo This is test 6
